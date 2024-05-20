@@ -4,6 +4,7 @@ body {
 
 blockquote {
   background-color: rgba(0, 12, 24, 0.05);
+  border: 1px dashed black;
 }
 
 a {
@@ -15,6 +16,10 @@ em {
 }
 
 .variant-em {
+  background-color: greenyellow;
+  font-weight: bold;
+  color: black;
+  font-style: inherit;
 }
 
 ul {
@@ -26,10 +31,16 @@ ul li {
 }
 
 .link1 a {
+  color: inherit;
+  padding: inherit;
 }
 
 .link2 a {
+  color: initial;
+  padding: initial;
 }
 
 .link3 a {
+  color: unset;
+  padding: unset;
 }
