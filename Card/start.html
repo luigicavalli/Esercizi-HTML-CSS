@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        body {
+            font-family: 'Calibri', sans-serif;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .card {
+            border: 2px solid lightgrey;
+            border-radius: 5px;
+            background-color: white;
+            width: 90%;
+            max-width: 300px;
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+        .card-title-text {
+            color: black;
+            padding: 0;
+            margin: 20px;
+        }
+        .list {
+            border-top: 2px solid lightgrey;
+        }
+        .list p {
+            padding: 0;
+            margin: 20px;
+        }
+        .links {
+            border-top: 2px solid lightgrey;
+            display: flex;
+        }
+        .links a {
+            color: blue;
+            padding: 0;
+            margin: 20px;
+        }
+        @media (max-width: 600px) {
+            .card {
+                width: 100px;
+                margin: 10px;
+            }
+            .card-title-text, .list a {
+                font-size: 1rem;
+                margin: none;
+            }
+            .list {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .links {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article class="card">
+            <img src="http://via.placeholder.com/300x200" alt="Image cap">
+            <div class="card-title-text">
+                <h2>Card title</h2>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="list">
+                <p>An item</p>
+            </div>
+            <div class="list">
+                <p>A second item</p>
+            </div>
+            <div class="list">
+                <p>A third item</p>
+            </div>
+            <nav class="links">
+                <a href="#">Card link</a>
+                <a href="#">Another link</a>
+            </nav>
+        </article>
+    </section>
+</body>
+</html>
