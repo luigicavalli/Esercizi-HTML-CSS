@@ -49,6 +49,25 @@
             background-color: green;
             color: white;
         }
+        .menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .menu div {
+            width: 30px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+        }
+        @media (max-width: 768px) {
+            .links, .search, .button {
+                display: none;
+            }
+            .menu {
+                display: flex;
+            }
+        }
     </style>
 </head>
 <body>
@@ -63,7 +82,12 @@
             </ul>
             <div>
                 <input class="search" type="text" placeholder="Search">
-                <button class="button" type="submit">Search</button>
+                <button class="button" type="submit">Search</button> 
+            </div>
+            <div class="menu">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </nav>
     </header>
